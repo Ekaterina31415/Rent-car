@@ -339,7 +339,8 @@ img {
 
 .header__container {
   max-width: 1692px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 5.5rem; }
 
 .menu {
   display: flex;
@@ -350,7 +351,7 @@ img {
   padding-top: 8rem; }
   .header__logo {
     font-size: 1.2rem;
-    max-width: 20rem;
+    max-width: 22.4rem;
     color: #fff;
     display: inline-block;
     margin-left: 2.2rem; }
@@ -383,3 +384,33 @@ img {
       position: absolute;
       opacity: 1;
       transition: all 0.3s; }
+
+.hero__container {
+  max-width: 100rem;
+  margin: auto; }
+
+.hero__title {
+  color: #fff;
+  font-size: 8rem;
+  line-height: 8.6rem;
+  margin-bottom: 3rem; }
+
+.hero__text {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #ddd;
+  margin-bottom: 50rem; }
+
+.hero__video {
+  position: absolute; }
+
+.video__title {
+  color: #fff;
+  font-size: 3.4rem; }
+
+.video__subtitle {
+  color: #ddd;
+  font-size: 1.4rem; }
+
+.video__video-block {
+  margin-top: -45rem; }
