@@ -1,0 +1,33 @@
+{
+  "name": "repair-design",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekaterina31415/repair-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ekaterina31415/repair-design/issues"
+  },
+  "homepage": "https://github.com/Ekaterina31415/repair-design#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "browser-sync": "^2.26.7",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}
