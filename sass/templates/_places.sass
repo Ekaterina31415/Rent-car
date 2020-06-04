@@ -1,0 +1,66 @@
+.section__places
+  background-color: #f7f4f2
+.places
+  &__container
+    max-width: 115rem
+    margin: auto
+  &__main-text
+    width: 27.5rem
+    color: #000000
+    font-size: 2.4rem
+  &__word
+    color: #ff6600
+  &__text
+    font-size: 1.8rem
+    margin-right: 1.9rem
+    &-icon
+      margin-bottom: -0.1rem
+.text-block
+  display: flex
+  justify-content: start
+  align-items: center
+.slide
+  &__inner
+    display: flex
+    justify-content: center
+    align-items: top
+  &__left
+    margin-right: 9rem
+  &__description
+    font-size: 1.3rem
+    line-height: 2rem
+    max-width: 25.3rem
+    color: #444
+    transition: 0.3s
+    &:hover
+      color:#17bebb
+  &__video
+    &:hover
+      background: rgba(#17bebb, 0.5)
+.swiper
+  &-button
+    &-prev
+      background: url('../img/places_arrow_left.svg')
+      width: 5.4rem
+      height: 5.4rem
+      &::after
+        display: none
+    &-next
+      background: url('../img/places_arrow_right.svg')
+      width: 5.4rem
+      height: 5.4rem
+      &::after
+        display: none
+      
+.row
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  overflow: hidden
+  padding-bottom: 19.5rem
+.col-30
+  width: 30%
+  margin-top: 35rem
+.col-70
+  width: 70%
+  margin-top: 35rem

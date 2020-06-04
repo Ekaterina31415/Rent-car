@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Аренда авто в Пятигорске</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,27 +30,120 @@
 
   <div class="hero">
     <div class="hero__container">
-
       <h1 class="hero__title">Аренда<br>авто в<br>Пятигорске</h1>
       <h2 class="hero__text">Ставропольский край<br>как на ладони</h2>
-      <div class="video__text">
-        <div class="hero__video">
+
+      <div class="hero__video">
+        <div class="video__text">
           <h2 class="video__title">Красоты Ставрополья</h2>
           <h3 class="video__subtitle">Надежный автомобиль — залог лучших впечатлений!</h3>
         </div>
-        <div class="video__video-block">
-          <img src="img/video_pic.png" alt="video" class="video__img">
-        </div>
-        </div>
-
+          <div class="video__video-block">
+            <img src="img/play.png" alt="video" class="video__play">
+          </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="section__places">
   <div class="places__container">
-    
+    <div class="row">
+
+      <div class="col-30">
+        <p class="places__main-text">Интересные места Ставропольского края <span class="places__word">эксклюзивно для вас!</span></p>
+        <div class="text-block">
+          <h3 class="places__text">Все видео</h3>
+          <img src="img/places_icon.svg" alt="" class="places__text-icon">
+        </div>
+      </div>
+  
+      <div class="col-70">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide__inner">
+                <div class="slide__left">
+                  <img src="img/video_left.png" alt="" class="slide__video">
+                  <p class="slide__description">Цейский заповедник близ Северной Осетии</p>
+                </div>
+                <div class="slide__right">
+                  <img src="img/video_right.png" alt="" class="slide__video">
+                  <p class="slide__description">Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__inner">
+                <div class="slide__left">
+                  <img src="img/video_left.png" alt="" class="slide__video">
+                  <p class="slide__description">Цейский заповедник близ Северной Осетии</p>
+                </div>
+                <div class="slide__right">
+                  <img src="img/video_right.png" alt="" class="slide__video">
+                  <p class="slide__description">Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </div>
+
+<div class="section___impressions">
+  <div class="impressions__container">
+    <h2 class="impressions__title">Впечатления клиентов</h2>
+    <h3 class="impressions__subtitle">Ваши впечатления — наша мотивация</h3>
+
+    <div class="review__container">
+      <div class="review">
+        <img src="img/1_man.png" alt="" class="reviewer__photo">
+        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__text">
+          <h2 class="review__title">Большаков О.В.</h2>
+          <p class="review__description">Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы
+            не состоялось!</p>
+        </div>
+      </div>
+      <div class="review">
+        <img src="img/2_man.png" alt="" class="reviewer__photo">
+        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__text">
+          <h2 class="review__title">Волков Н.Б.</h2>
+          <p class="review__description">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше
+            отношение - РЕСПЕКТ!</p>
+        </div>
+      </div>
+      <div class="review">
+        <img src="img/3_man.png" alt="" class="reviewer__photo">
+        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__text">
+          <h2 class="review__title">Новиков К.Ф.</h2>
+          <p class="review__description">Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда
+            путешествуешь «дикарем».. РЕКОМЕНДУЮ!</p>
+        </div>
+      </div>
+      <div class="review">
+        <img src="img/no_photo.svg" alt="" class="reviewer__photo">
+        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__text">
+          <h2 class="review__title">Шубин Т.И.</h2>
+          <p class="review__description">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце -
+            просто на всю жизнь...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
