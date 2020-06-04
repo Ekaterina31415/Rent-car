@@ -22,7 +22,7 @@
           <a href="#" class="nav__item">Условия</a>
           <a href="#" class="nav__item">Комплектация автомобиля</a>
           <a href="#" class="nav__item">Договор аренды</a>
-          <a href="#" class="nav__item">Договор аренды</a>
+          <a href="#" class="nav__item">Контакты</a>
         </nav>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div class="col-30">
         <p class="places__main-text">Интересные места Ставропольского края <span class="places__word">эксклюзивно для вас!</span></p>
         <div class="text-block">
-          <h3 class="places__text">Все видео</h3>
+          <h3 class="places__text"><a class="all__videos" href="#">Все видео</a></h3>
           <img src="img/places_icon.svg" alt="" class="places__text-icon">
         </div>
       </div>
@@ -65,11 +65,37 @@
             <div class="swiper-slide">
               <div class="slide__inner">
                 <div class="slide__left">
-                  <img src="img/video_left.png" alt="" class="slide__video">
+                  <div class="video">
+                    <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="overlay"></div>
+                    <div class="slide__play">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g>
+                          <g>
+                            <path fill="#222"
+                              d="M11.904 4.808a2.567 2.567 0 0 1 0 4.44l-7.245 4.155a2.567 2.567 0 0 1-3.848-2.22v-8.34A2.564 2.564 0 0 1 4.66.593l7.245 4.155v.06z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                   <p class="slide__description">Цейский заповедник близ Северной Осетии</p>
                 </div>
                 <div class="slide__right">
-                  <img src="img/video_right.png" alt="" class="slide__video">
+                  <div class="video">
+                    <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="overlay"></div>
+                    <div class="slide__play">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g>
+                          <g>
+                            <path fill="#222"
+                              d="M11.904 4.808a2.567 2.567 0 0 1 0 4.44l-7.245 4.155a2.567 2.567 0 0 1-3.848-2.22v-8.34A2.564 2.564 0 0 1 4.66.593l7.245 4.155v.06z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                   <p class="slide__description">Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</p>
                 </div>
               </div>
@@ -77,18 +103,65 @@
             <div class="swiper-slide">
               <div class="slide__inner">
                 <div class="slide__left">
-                  <img src="img/video_left.png" alt="" class="slide__video">
+                  <div class="video">
+                    <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="slide__play">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g>
+                          <g>
+                            <path fill="#222"
+                              d="M11.904 4.808a2.567 2.567 0 0 1 0 4.44l-7.245 4.155a2.567 2.567 0 0 1-3.848-2.22v-8.34A2.564 2.564 0 0 1 4.66.593l7.245 4.155v.06z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                   <p class="slide__description">Цейский заповедник близ Северной Осетии</p>
                 </div>
                 <div class="slide__right">
-                  <img src="img/video_right.png" alt="" class="slide__video">
+                  <div class="video">
+                    <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="slide__play">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g>
+                          <g>
+                            <path fill="#222"
+                              d="M11.904 4.808a2.567 2.567 0 0 1 0 4.44l-7.245 4.155a2.567 2.567 0 0 1-3.848-2.22v-8.34A2.564 2.564 0 0 1 4.66.593l7.245 4.155v.06z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                   <p class="slide__description">Незабываемый маршрут в Ингушский заповедник: Боевые башни Эрзи</p>
                 </div>
               </div>
             </div>
+            
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <div class="button__arrow">
+              <svg class="arrow__pic" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <g>
+                  <g>
+                    <path fill="000"
+                      d="M11 4.998a1 1 0 0 1 0 2H3.41l3.3 3.29a1 1 0 0 1 0 1.42.997.997 0 0 1-.621.292H5.91a.998.998 0 0 1-.62-.292l-5-4.999a1 1 0 0 1-.21-.33 1 1 0 0 1 0-.76 1 1 0 0 1 .21-.33l5-5.001A1 1 0 0 1 5.893 0h.214a1.005 1.005 0 0 1 .603 1.709l-3.3 3.289z" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="button__arrow">
+              <svg class="arrow__pic" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <g>
+                  <g>
+                    <path fill="#222"
+                      d="M8.59 4.998l-3.3-3.29A1.005 1.005 0 0 1 6.71.289l5 5a1 1 0 0 1 .21.33 1 1 0 0 1 0 .76 1 1 0 0 1-.21.331l-5 5a1 1 0 0 1-1.42 0 1 1 0 0 1 0-1.42l3.3-3.291H1a1 1 0 1 1 0-2z" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -104,8 +177,10 @@
 
     <div class="review__container">
       <div class="review">
-        <img src="img/1_man.png" alt="" class="reviewer__photo">
-        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__man">
+          <img src="img/1_man.png" alt="" class="reviewer__photo">
+          <img src="img/review.png" alt="" class="review__dialog">
+        </div>
         <div class="review__text">
           <h2 class="review__title">Большаков О.В.</h2>
           <p class="review__description">Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы
@@ -113,8 +188,10 @@
         </div>
       </div>
       <div class="review">
-        <img src="img/2_man.png" alt="" class="reviewer__photo">
-        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__man">
+          <img src="img/2_man.png" alt="" class="reviewer__photo">
+          <img src="img/review.png" alt="" class="review__dialog">
+        </div>
         <div class="review__text">
           <h2 class="review__title">Волков Н.Б.</h2>
           <p class="review__description">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше
@@ -122,8 +199,10 @@
         </div>
       </div>
       <div class="review">
-        <img src="img/3_man.png" alt="" class="reviewer__photo">
-        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__man">
+          <img src="img/3_man.png" alt="" class="reviewer__photo">
+          <img src="img/review.png" alt="" class="review__dialog">
+        </div>
         <div class="review__text">
           <h2 class="review__title">Новиков К.Ф.</h2>
           <p class="review__description">Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда
@@ -131,8 +210,10 @@
         </div>
       </div>
       <div class="review">
-        <img src="img/no_photo.svg" alt="" class="reviewer__photo">
-        <img src="img/review.png" alt="" class="review__dialog">
+        <div class="review__man">
+          <img src="img/no_photo.svg" alt="" class="reviewer__photo">
+          <img src="img/review.png" alt="" class="review__dialog">
+        </div>
         <div class="review__text">
           <h2 class="review__title">Шубин Т.И.</h2>
           <p class="review__description">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце -
@@ -142,6 +223,41 @@
     </div>
   </div>
 </div>
+
+<section class="section__about-car">
+  <div class="about-car__container">
+    <div class="row">
+      <div class="col-60">
+        <!-- Swiper -->
+        <div class="swiper-container swiper-about">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="col-40">
+        <h2 class="about-car__title">О нашем автомобиле</h2>
+        <h3 class="about-car__subtitle">Чистый салон</h3>
+        <p class="about-car__description">Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен -
+          наш салон не исключение!</p>
+        <p class="about-car__warning">(обязательное условие аренды - возвращение автомобиля в чистом виде)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__container">
+
+  </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.js"></script>

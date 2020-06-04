@@ -45,7 +45,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -322,7 +322,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Myriad Pro Regular', sans-serif;
+  font-family: 'Myriad Pro Cond', sans-serif;
   font-size: 1rem; }
 
 html {
@@ -335,10 +335,9 @@ img {
   background: #222222 url("../img/hero-bg.png") center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
 
 .header__container {
-  max-width: 1692px;
   padding: 0 11.4rem; }
 
 .menu {
@@ -365,10 +364,12 @@ img {
   font-size: 1.6rem;
   line-height: 2.8rem;
   text-decoration: none;
-  margin-right: 5.7rem;
+  margin-left: 5.6rem;
   transition: 0.3s;
   display: inline-block;
   position: relative; }
+  .nav__item:first-child {
+    margin-left: 0; }
   .nav__item::after {
     content: '';
     opacity: 0; }
@@ -386,14 +387,15 @@ img {
 
 .hero__container {
   max-width: 100rem;
-  margin: auto;
-  padding-top: 10rem; }
+  margin: auto; }
 
 .hero__title {
   color: #fff;
   font-size: 8rem;
   line-height: 8.6rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-left: -4.8rem; }
 
 .hero__text {
   font-size: 2rem;
@@ -402,9 +404,15 @@ img {
   padding-bottom: 25rem; }
 
 .hero__video {
-  position: relative;
+  position: absolute;
   background: url("../img/video_pic.png");
-  background-size: cover; }
+  background-size: cover;
+  width: 100.3rem;
+  height: 50.6rem;
+  top: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .video__title {
   color: #fff;
@@ -415,7 +423,12 @@ img {
   font-size: 1.4rem; }
 
 .video__play {
-  margin: auto; }
+  margin-left: 3rem; }
+
+.video__text {
+  position: absolute;
+  top: 5.6rem;
+  left: 0; }
 
 .section__places {
   background-color: #f7f4f2; }
@@ -448,6 +461,16 @@ img {
   justify-content: center;
   align-items: top; }
 
+.slide__play {
+  background: #fff;
+  border-radius: 50%;
+  width: 5.4rem;
+  height: 5.4rem;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .slide__left {
   margin-right: 9rem; }
 
@@ -460,22 +483,52 @@ img {
   .slide__description:hover {
     color: #17bebb; }
 
-.slide__video:hover {
-  background: rgba(23, 190, 187, 0.5); }
+.slide__video {
+  position: absolute; }
 
 .swiper-button-prev {
-  background: url("../img/places_arrow_left.svg");
   width: 5.4rem;
-  height: 5.4rem; }
+  height: 5.4rem;
+  top: 8rem;
+  left: 0.7rem; }
   .swiper-button-prev::after {
     display: none; }
 
 .swiper-button-next {
-  background: url("../img/places_arrow_right.svg");
   width: 5.4rem;
-  height: 5.4rem; }
+  height: 5.4rem;
+  top: 8rem;
+  right: 0.7rem; }
   .swiper-button-next::after {
     display: none; }
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30.6rem;
+  height: 17.2rem; }
+  .video:hover .overlay {
+    background: rgba(23, 190, 187, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute; }
+  .video:hover .slide__play::before {
+    content: '';
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    top: calc( 50% - 4.5rem);
+    left: calc( 50% - 4.5rem);
+    border: 1px solid #fff;
+    border-radius: 50%; }
+  .video:hover .slide__play path {
+    fill: #17bebb; }
+  .video:hover + .slide__description {
+    color: #17bebb; }
 
 .row {
   display: flex;
@@ -491,6 +544,21 @@ img {
 .col-70 {
   width: 70%;
   margin-top: 35rem; }
+
+.all__videos {
+  text-decoration: none;
+  color: black; }
+
+.button__arrow {
+  background: #fff;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button__arrow:hover .arrow__pic {
+    opacity: 0.7; }
 
 .impressions__container {
   padding-top: 14.5rem;
@@ -525,14 +593,52 @@ img {
   margin-bottom: 3.1rem; }
 
 .review__description {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2.2rem;
   color: #777; }
 
 .review__dialog {
-  margin-left: -4.6rem;
-  margin-bottom: -1.8rem;
-  z-index: 1; }
+  bottom: -1.4rem;
+  left: 2.7rem;
+  z-index: -1;
+  position: absolute; }
 
 .review__photo {
   z-index: 2; }
+
+.review__man {
+  position: relative; }
+
+.section__about-car {
+  padding: 0 31rem;
+  background-color: #f7f4f2; }
+
+.about-car__title {
+  font-size: 4rem;
+  max-width: 20rem;
+  margin-bottom: 11.2rem; }
+
+.about-car__subtitle {
+  font-size: 3.3rem;
+  margin-bottom: 5rem; }
+
+.about-car__description {
+  max-width: 30rem;
+  font-size: 2rem;
+  color: #706f6f;
+  margin-bottom: 2.6rem; }
+
+.about-car__warning {
+  max-width: 30rem;
+  font-size: 1.5rem;
+  color: #b5b4b3; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 19.8rem; }
+
+.col-40 {
+  margin-left: 10rem; }
