@@ -614,23 +614,27 @@ img {
   background-color: #f7f4f2; }
 
 .about-car__title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   max-width: 20rem;
-  margin-bottom: 11.2rem; }
+  margin-bottom: 10rem;
+  margin-top: 0; }
 
 .about-car__subtitle {
-  font-size: 3.3rem;
-  margin-bottom: 5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  margin-top: 0; }
 
 .about-car__description {
   max-width: 30rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   color: #706f6f;
-  margin-bottom: 2.6rem; }
+  margin-bottom: 2rem; }
 
 .about-car__warning {
   max-width: 30rem;
-  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.3rem;
   color: #b5b4b3; }
 
 .row {
@@ -641,4 +645,43 @@ img {
   padding-top: 19.8rem; }
 
 .col-40 {
-  margin-left: 10rem; }
+  width: 40%;
+  margin-left: 15rem; }
+
+.col-60 {
+  width: 60%; }
+
+.slider-about__slide {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem; }
+
+.swiper-about {
+  height: 48rem;
+  width: 100%; }
+
+.button-next {
+  width: 5.4rem;
+  height: 5.4rem;
+  top: 20rem;
+  right: 0; }
+
+.button-prev {
+  width: 5.4rem;
+  height: 5.4rem;
+  top: 20rem;
+  left: 0; }
+
+.about__pagination {
+  color: #222;
+  width: 50%; }
+  .about__pagination .swiper-pagination-current {
+    font-size: 2.3rem;
+    margin-right: 4rem; }
+    .about__pagination .swiper-pagination-current::before {
+      content: '0'; }
+  .about__pagination .swiper-pagination-total {
+    font-size: 1.3rem;
+    margin-left: 2rem; }
+    .about__pagination .swiper-pagination-total::before {
+      content: '0'; }

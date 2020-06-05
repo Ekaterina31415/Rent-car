@@ -105,6 +105,7 @@
                 <div class="slide__left">
                   <div class="video">
                     <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="overlay"></div>
                     <div class="slide__play">
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <g>
@@ -121,6 +122,7 @@
                 <div class="slide__right">
                   <div class="video">
                     <img src="img/video_right.png" alt="" class="slide__video">
+                    <div class="overlay"></div>
                     <div class="slide__play">
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                         <g>
@@ -231,14 +233,42 @@
         <!-- Swiper -->
         <div class="swiper-container swiper-about">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide slider-about__slide">
+              <img src="img/interior.jpg" alt="" class="about__pic">
+            </div>
+            <div class="swiper-slide slider-about__slide">
+              <img src="img/interior.jpg" alt="" class="about__pic">
+            </div>
           </div>
           <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination about__pagination"></div>
           <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+            <div class="button-next swiper-button-next">
+              <div class="button__arrow">
+                <svg class="arrow__pic" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                  <g>
+                    <g>
+                      <path fill="#222"
+                        d="M8.59 4.998l-3.3-3.29A1.005 1.005 0 0 1 6.71.289l5 5a1 1 0 0 1 .21.33 1 1 0 0 1 0 .76 1 1 0 0 1-.21.331l-5 5a1 1 0 0 1-1.42 0 1 1 0 0 1 0-1.42l3.3-3.291H1a1 1 0 1 1 0-2z" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+              <div class="button-prev swiper-button-prev">
+                <div class="button__arrow">
+                  <svg class="arrow__pic" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                    <g>
+                      <g>
+                        <path fill="000"
+                          d="M11 4.998a1 1 0 0 1 0 2H3.41l3.3 3.29a1 1 0 0 1 0 1.42.997.997 0 0 1-.621.292H5.91a.998.998 0 0 1-.62-.292l-5-4.999a1 1 0 0 1-.21-.33 1 1 0 0 1 0-.76 1 1 0 0 1 .21-.33l5-5.001A1 1 0 0 1 5.893 0h.214a1.005 1.005 0 0 1 .603 1.709l-3.3 3.289z" />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+
+
         </div>
       </div>
       <div class="col-40">
