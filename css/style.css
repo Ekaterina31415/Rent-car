@@ -685,3 +685,203 @@ img {
     margin-left: 2rem; }
     .about__pagination .swiper-pagination-total::before {
       content: '0'; }
+
+.footer {
+  background: #222;
+  padding-bottom: 40rem; }
+  .footer__container {
+    padding: 0 40rem; }
+  .footer__col-30 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .footer__row {
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 19rem; }
+
+.zoom__text {
+  margin-left: 2rem; }
+
+.zoom__title {
+  margin-top: 0;
+  color: #fff;
+  font-size: 8rem;
+  margin-bottom: 1rem; }
+
+.zoom__subtitle {
+  margin-top: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 8.5rem; }
+
+.zoom__transmission {
+  display: flex;
+  flex-direction: column;
+  margin-top: -19rem;
+  margin-left: 5rem;
+  margin-bottom: 6.5rem; }
+
+.zoom-title__inner {
+  font-size: 3rem;
+  margin-bottom: -0.5rem; }
+
+.zoom-subtitle__inner {
+  font-size: 1.3rem;
+  color: #777;
+  text-align: right; }
+
+.zoom__mileage {
+  margin-top: -19rem;
+  margin-left: 5rem; }
+
+.transmission__title {
+  color: #fff;
+  max-width: 5.3rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem; }
+
+.transmission__img {
+  width: 23.3rem;
+  height: 20.7rem; }
+
+.first__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 13.5rem; }
+
+.second__line {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 13.5rem;
+  color: #fff; }
+
+.mileage__img {
+  width: 23.3rem;
+  height: 20.7rem; }
+
+.mileage__title {
+  font-size: 3.5rem; }
+
+.speed {
+  margin-top: -0.6rem; }
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #444; }
+
+.petrol__title {
+  font-size: 8rem;
+  color: #fff;
+  margin: 0; }
+
+.petrol__number {
+  font-size: 2.5rem;
+  color: #17bebb;
+  margin: 0; }
+
+.petrol__x {
+  font-size: 4rem;
+  margin: 0;
+  color: #777; }
+
+.petrol__second-line {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem; }
+
+.petrol__last-text {
+  max-width: 20.3rem;
+  margin-top: 3.3rem;
+  color: #fff;
+  line-height: 2.3rem;
+  font-size: 1.8rem; }
+
+.petrol__features {
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 2.7rem; }
+
+.petrol__word {
+  color: #ff6600; }
+
+.petrol__save {
+  margin-top: 3.7rem; }
+
+.number__x {
+  margin-left: 3.5rem;
+  margin-top: 1rem; }
+
+.save__img {
+  text-align: left;
+  margin-top: 5rem; }
+
+.add__last-text {
+  max-width: 26rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  color: #777; }
+
+.add__word {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #fff; }
+
+.add__statistics-number {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-right: 2.2rem;
+  margin-left: 1rem; }
+
+.order {
+  padding-top: 19rem; }
+  .order__col-30 {
+    display: flex;
+    justify-content: center;
+    width: 30%; }
+  .order__row {
+    display: flex;
+    flex-direction: row; }
+  .order__title {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    max-width: 20rem; }
+
+.select {
+  color: #fff; }
+  .select__header, .select__item {
+    height: 9rem;
+    width: 30.6rem;
+    border: 1px solid #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 3.5rem 3rem 3.1rem 3.7rem;
+    cursor: pointer; }
+  .select__header {
+    justify-content: space-around;
+    border-radius: 3px; }
+  .select__item {
+    border-top: none; }
+    .select__item:hover {
+      background-color: #383838; }
+  .select__body {
+    position: absolute;
+    border: 1px solid #777;
+    border-top: none;
+    opacity: 0;
+    visibility: hidden; }
+    .select__body--visible {
+      opacity: 1;
+      visibility: visible; }
+  .select__word {
+    font-size: 1.6rem;
+    margin-right: 7rem;
+    color: #777; }
